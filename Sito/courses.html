@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsi Disponibili</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Corsi di Programmazione</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Modulo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="courses.html">Corsi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container py-5">
+    <h2 class="text-center mb-4">Corsi Disponibili</h2>
+    <table class="table table-striped" id="coursesTable">
+        <thead>
+            <tr>
+                <th>Nome Corso</th>
+                <th>Durata</th>
+                <th>Livello</th>
+                <th>Azione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" class="form-control" value="Corso Base di HTML"></td>
+                <td><input type="text" class="form-control" value="2 settimane"></td>
+                <td>
+                    <select class="form-control">
+                        <option value="Principiante" selected>Principiante</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzato">Avanzato</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-sm remove-row">Rimuovi</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" id="addRow">Aggiungi Corso</button>
+</main>
+
+<script src="js/table.js"></script>
+</body>
+</html>
